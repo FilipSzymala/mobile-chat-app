@@ -33,10 +33,10 @@ export default function Login({ navigation }) {
       <Image source={backImage} style={styles.backImage} />
       <View style={styles.whiteSheet} />
       <SafeAreaView style={styles.form}>
-        <Text style={styles.title}>Login</Text>
+        <Text style={styles.title}>Logowanie</Text>
         <TextInput
           style={styles.input}
-          placeholder="Enter email"
+          placeholder="Wpisz email"
           autoCapitalize="none"
           keyboardType="email-address"
           textContentType="emailAddress"
@@ -46,7 +46,7 @@ export default function Login({ navigation }) {
         />
         <TextInput
           style={styles.input}
-          placeholder="Enter password"
+          placeholder="Wpisz hasło"
           autoCapitalize="none"
           autoCorrect={false}
           secureTextEntry={true}
@@ -56,7 +56,7 @@ export default function Login({ navigation }) {
         />
         <TouchableOpacity style={styles.button} onPress={onHandleLogin}>
           <Text style={{ fontWeight: "bold", color: "#fff", fontSize: 18 }}>
-            Log In
+            Zaloguj
           </Text>
         </TouchableOpacity>
         <View
@@ -68,7 +68,7 @@ export default function Login({ navigation }) {
           }}
         >
           <Text style={{ color: "gray", fontWeight: "600", fontSize: 14 }}>
-            Don't have an account?
+            Nie masz konta?
           </Text>
           <TouchableOpacity onPress={() => navigation.navigate("SignUp")}>
             <Text
@@ -79,7 +79,7 @@ export default function Login({ navigation }) {
                 marginLeft: 3,
               }}
             >
-              Sign Up
+              Zarejestruj się
             </Text>
           </TouchableOpacity>
         </View>

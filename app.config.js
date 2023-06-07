@@ -2,7 +2,7 @@ import "dotenv/config";
 
 export default {
   expo: {
-    name: "mobile-chat-app",
+    name: "Chat2Gthr",
     slug: "mobile-chat-app",
     version: "1.0.0",
     orientation: "portrait",
@@ -22,6 +22,7 @@ export default {
         foregroundImage: "./assets/adaptive-icon.png",
         backgroundColor: "#ffffff",
       },
+      package: "pl.szymdev.app.prod",
     },
     web: {
       favicon: "./assets/favicon.png",
@@ -33,6 +34,9 @@ export default {
       storageBucket: process.env.STORAGE_BUCKET,
       messagingSenderId: process.env.MESSAGING_SENDER_ID,
       appId: process.env.APP_ID,
+      eas: {
+        projectId: "0c5be27d-16a0-4f05-9d19-9bcd4ff01f09",
+      },
     },
   },
 };

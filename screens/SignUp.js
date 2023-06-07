@@ -33,10 +33,10 @@ export default function SignUp({ navigation }) {
       <Image source={backImage} style={styles.backImage} />
       <View style={styles.whiteSheet} />
       <SafeAreaView style={styles.form}>
-        <Text style={styles.title}>Sign Up</Text>
+        <Text style={styles.title}>Rejestracja</Text>
         <TextInput
           style={styles.input}
-          placeholder="Enter email"
+          placeholder="Wpisz email"
           autoCapitalize="none"
           keyboardType="email-address"
           textContentType="emailAddress"
@@ -46,7 +46,7 @@ export default function SignUp({ navigation }) {
         />
         <TextInput
           style={styles.input}
-          placeholder="Enter password"
+          placeholder="Wpisz hasło"
           autoCapitalize="none"
           autoCorrect={false}
           secureTextEntry={true}
@@ -56,7 +56,7 @@ export default function SignUp({ navigation }) {
         />
         <TouchableOpacity style={styles.button} onPress={onHandleSignUp}>
           <Text style={{ fontWeight: "bold", color: "#fff", fontSize: 18 }}>
-            Sign Up
+            Zarejestruj się
           </Text>
         </TouchableOpacity>
         <View
@@ -68,7 +68,7 @@ export default function SignUp({ navigation }) {
           }}
         >
           <Text style={{ color: "gray", fontWeight: "600", fontSize: 14 }}>
-            You already have an account?
+            Już masz konto?
           </Text>
           <TouchableOpacity onPress={() => navigation.navigate("Login")}>
             <Text
@@ -79,7 +79,7 @@ export default function SignUp({ navigation }) {
                 marginLeft: 3,
               }}
             >
-              Log In
+              Zaloguj
             </Text>
           </TouchableOpacity>
         </View>
